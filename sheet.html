@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Operations</title>
+    <link rel="stylesheet" href="sheet.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Operations Panel (Fixed at the Top) -->
+        <div class="operations-panel">
+            <h1>Operations Panel</h1>
+
+            <!-- Primary Column Input -->
+            <label for="primary-column">Enter Primary Column (e.g., A):</label>
+            <input type="text" id="primary-column" placeholder="Enter primary column">
+
+            <!-- Columns for Operations Input -->
+            <label for="operation-columns">Enter Columns for Operation (e.g., A,B,C):</label>
+            <input type="text" id="operation-columns" placeholder="Enter columns to operate on">
+
+            <!-- Operation Type Selection -->
+            <label for="operation-type">Choose Operation Type:</label>
+            <select id="operation-type">
+                <option value="and">AND</option>
+                <option value="or">OR</option>
+            </select>
+
+            <!-- Null/Not-Null Selection -->
+            <label for="operation">Choose Null/Not-Null:</label>
+            <select id="operation">
+                <option value="null">Null</option>
+                <option value="not-null">Not Null</option>
+            </select>
+
+            <!-- Apply Button -->
+            <button id="apply-operation">Apply Operation</button>
+        </div>
+
+        <!-- Excel Sheet Display Area -->
+        <div id="sheet-content" class="sheet-content"></div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
+        <script src="sheet.js"></script>
+    </div>
+</body>
+</html>
