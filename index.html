@@ -3,21 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Excel Sheet Viewer</title>
+    <title>Upload Excel Sheet</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Excel Sheet Viewer</h1>
-        <div class="input-box">
-            <label for="excel-url">Enter Excel File URL:</label>
-            <input type="text" id="excel-url" placeholder="Enter the URL of the Excel file">
-            <button id="fetch-sheets">Get Sheet Names</button>
-        </div>
-        <div id="sheet-list" class="sheet-list"></div>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
-        <script src="script.js"></script>
+        <h1>Upload Excel Sheet Link</h1>
+        <form id="uploadForm">
+            <label for="excelLink">Excel Sheet Link:</label>
+            <input type="text" id="excelLink" placeholder="Enter the Excel sheet link" required>
+            <button type="submit">Submit</button>
+        </form>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
