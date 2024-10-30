@@ -1,65 +1,27 @@
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-}
-
-.container {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-}
-
+/* Styles for the operations panel and excel display */
 .operations-panel {
-    background-color: #e3f2fd;
-    padding: 20px;
-    border-bottom: 2px solid #1565c0;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
     position: fixed;
     top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    left: 0;
+    right: 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.operations-panel h1 {
-    color: #1565c0;
-}
-
-.operations-panel label,
-.operations-panel input,
-.operations-panel select,
-.operations-panel button {
-    margin-right: 15px;
-    font-size: 16px;
-}
-
-#sheet-content {
-    margin-top: 180px; /* To create space below the operations panel */
-    background-color: white;
+.excel-container {
+    margin-top: 70px; /* Space for the operations panel */
     padding: 20px;
-    overflow-x: auto;
-    border-radius: 10px;
+    background-color: #f4f4f9;
+}
+
+#sheetData {
+    background-color: #fff;
     border: 1px solid #ddd;
-}
-
-/* Excel Table Style */
-table {
-    border-collapse: collapse;
-    width: 100%;
-    font-size: 14px;
-}
-
-table, th, td {
-    border: 1px solid #999;
-    text-align: left;
-    padding: 8px;
-}
-
-th {
-    background-color: #f0f0f0;
-}
-
-tr:nth-child(even) {
-    background-color: #f9f9f9;
+    padding: 10px;
+    max-height: 400px;
+    overflow-y: auto;
 }
